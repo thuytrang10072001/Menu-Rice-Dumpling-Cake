@@ -8,6 +8,9 @@ header{
     border-radius: 50px;
     box-shadow: 5px 5px 10px #dddddd; 
 }
+.contact:hover{
+    cursor: pointer;
+}
 
 .phone{
     margin-right: 10px;
@@ -28,12 +31,6 @@ header{
     margin-bottom: 20px;
 }
 
-@media screen and (max-width: 540px) {
-    .main .title-menu{
-        font-size: 24px;
-
-    }
-}
 .menu .item{
     border-radius: 10px;
     background-color: var(--color-white);
@@ -41,7 +38,24 @@ header{
     font-size: 20px;
     height: 400px;
     margin-top: 20px
+}   
+
+@media screen and (max-width: 768px) {
+    .main .title-menu{
+        font-size: 24px;
+    }
+
+    .menu .item{
+        height: 333px;
+    }
 }
+
+@media screen and (max-width: 540px) {
+    .menu .item{
+        height: 300px;
+    }
+}
+
 
 .menu .item img{
     border-radius: 10px 10px 0 0;
@@ -52,3 +66,4 @@ header{
     flex: 1;
     padding: 0 10px;
 }
+
